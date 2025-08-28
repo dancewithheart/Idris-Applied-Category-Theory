@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install Idris2 using brew
+        run: |
+          brew update
+          brew install idris2
+
+      - name: Build
+        run: idris2 --install Idris-Applied-Category-Theory.ipkg
