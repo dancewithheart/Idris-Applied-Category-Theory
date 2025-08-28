@@ -21,4 +21,4 @@ jobs:
           brew install idris2
 
       - name: Build
-        run: idris2 --install Idris-Applied-Category-Theory.ipkg
+        run: idris2 --install act.ipkg
