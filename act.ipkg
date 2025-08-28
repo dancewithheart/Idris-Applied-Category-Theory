@@ -1,6 +1,6 @@
 package act
 
-sourcedir = src
+sourceloc = "https://github.com/dancewithheart/Idris-Applied-Category-Theory"
 
 modules =
         Logic.ActBool
@@ -13,3 +13,5 @@ modules =
         , Act.Preorder
         , Act.MonoidalPreorder
         , Act.SymmetricMonoidalPreorder
+
+sourcedir = "src"
